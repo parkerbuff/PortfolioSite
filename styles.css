@@ -36,6 +36,7 @@ header h1,
 header h3,
 .highlight {
     color: var(--color-highlight);
+    font-weight: 500;
 }
 
 header a {
@@ -87,7 +88,16 @@ section h2{
 }
 
 .grid_container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px,200px)); 
-    margin-left: 20px;
+    display: flex;
+    list-style-type: none;
+    gap: .4rem;
+}
+.grid_container li {
+    background-color: rgba(22, 95, 57, 0.348);
+    color: rgb(57, 225, 135);
+    padding: 0.2rem .5rem;
+    max-width: fit-content;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: 500;
 }
