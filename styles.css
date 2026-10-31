@@ -130,5 +130,5 @@ section h2{
 .experience_content{
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 6rem;
+    gap: 3rem;
 }
