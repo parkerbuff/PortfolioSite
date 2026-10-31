@@ -27,6 +27,10 @@ p {
     line-height: 1.4rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 p::selection,
 h1::selection,
 h2::selection,
@@ -36,11 +40,13 @@ li::selection {
     color: var(--color-backdrop);
 }
 
-i {
+a p,
+a i {
     transition-duration: 400ms;
 }
 
-i:hover {
+a p:hover,
+a i:hover {
     color: var(--color-accent);
 }
 
@@ -119,4 +125,10 @@ section h2{
     border-radius: 1rem;
     font-size: .8rem;
     font-weight: 500;
+}
+
+.experience_content{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 6rem;
 }
