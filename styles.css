@@ -1,6 +1,8 @@
 :root {
-    --color-accent: rgb(175, 113, 212);
+    --color-accent: rgb(57, 225, 135);
     --color-highlight: rgb(232, 230, 241);
+    --color-backdrop: rgb(20, 22, 42);
+    --color-textdefault: rgb(171, 170, 184);
 }
 
 *{
@@ -13,8 +15,8 @@
 }
 
 body{
-    background-color: rgb(20, 22, 42);
-    color: rgb(171, 170, 184);
+    background-color: var(--color-backdrop);
+    color: var(--color-textdefault);
     padding: 4rem 2rem;
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -23,6 +25,23 @@ body{
 
 p {
     line-height: 1.4rem;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+li::selection {
+    background: var(--color-accent);
+    color: var(--color-backdrop);
+}
+
+i {
+    transition-duration: 400ms;
+}
+
+i:hover {
+    color: var(--color-accent);
 }
 
 header {
@@ -87,15 +106,15 @@ section h2{
     gap: 1rem;
 }
 
-.grid_container {
+.list_container {
     display: flex;
     list-style-type: none;
     gap: .4rem;
 }
-.grid_container li {
+.list_container li {
     background-color: rgba(22, 95, 57, 0.348);
-    color: rgb(57, 225, 135);
-    padding: 0.2rem .5rem;
+    color: var(--color-accent);
+    padding: 0.3rem .6rem;
     max-width: fit-content;
     border-radius: 1rem;
     font-size: .8rem;
