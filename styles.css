@@ -90,8 +90,7 @@ header h3 {
 main {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    width: 500px;
+    gap: 6rem;
 }
 
 section {
@@ -100,7 +99,7 @@ section {
     gap: 2rem;
 }
 
-section h2{
+section h2 {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
@@ -112,23 +111,41 @@ section h2{
     gap: 1rem;
 }
 
+.about_content p{
+    font-size: 1.1rem;
+}
+
 .list_container {
     display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
     gap: .4rem;
 }
+
 .list_container li {
     background-color: rgba(22, 95, 57, 0.348);
     color: var(--color-accent);
     padding: 0.3rem .6rem;
-    max-width: fit-content;
     border-radius: 1rem;
     font-size: .8rem;
     font-weight: 500;
 }
 
-.experience_content{
+.experience_content {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.experience_block {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
-    gap: 3rem;
+    gap: .5rem;
+    font-size: .9rem;
+}
+
+.block_column {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
