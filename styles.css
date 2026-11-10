@@ -29,6 +29,11 @@ p {
 
 a {
     text-decoration: none;
+    width: fit-content;
+}
+
+nav a {
+    display: flex;
 }
 
 p::selection,
@@ -66,6 +71,15 @@ header h3,
 .highlight {
     color: var(--color-highlight);
     font-weight: 500;
+}
+
+.highlight span {
+    transition-duration: 200ms;
+    font-weight: 800;
+}
+
+.highlight:hover span {
+    padding-left: .5rem;
 }
 
 header a {
