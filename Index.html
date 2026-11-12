@@ -10,21 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="top">
     <header>
         <a href="Index.html">
             <h1>Parker Buff</h1>
         </a>
         <h3>Software Developer</h3>
         <p>I design and build reliable API integration solutions.</p>
-        <nav>
-            <a href="about">
+        <nav class="highlight">
+            <a class="highlight" href="#about">
                 <p>About</p>
             </a>
-            <a href="experience">
+            <a class="highlight" href="#experience">
                 <p>Experience</p>
             </a>
-            <a href="projects">
+            <a class="highlight" href="#projects">
                 <p>Projects</p>
             </a>
         </nav>
@@ -39,7 +39,7 @@
     </header>
     <main>
         <section id="about">
-            <div>
+            <div class="freeze_header">
                 <h2 class="highlight">About</h2>
             </div>
             <div class="about_content content">
@@ -70,7 +70,7 @@
             </div>
         </section>
         <section id="experience">
-            <div>
+            <div class="freeze_header">
                 <h2 class="highlight">Experience</h2>
             </div>
             <div class="experience_content">
@@ -124,31 +124,10 @@
             <a class="highlight" href="/PortfolioSite/public/ParkerBuff_Resume.docx" target="_blank"><p>View Full Resume <span class="r_arr">&rarr;</span></p></a>
         </section>
         <section id="projects">
-            <div>
+            <div class="freeze_header">
                 <h2 class="highlight">Projects</h2>
             </div>
             <div class="projects_content content">
-                <div class="projects_block">
-                    <div class="projects_image_container">
-                        <a href="">
-                            <img src="/PortfolioSite/public/PortfolioSite.png" alt="Portfolio Site Thumbnail">
-                        </a>
-                    </div>
-                    <div class="block_column">
-                        <a href="" target="_blank">
-                            <h3 class="highlight">Portfoilio Site <span class="r_arr">&rarr;</span></h3>
-                        </a>
-                        <p>You're already here! My personal website showcasing my background and future plans.</p>
-                        <a class="highlight project_link" href="https://github.com/parkerbuff/PortfolioSite" target="_blank">
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <p>Project Files <span class="r_arr">&rarr;</span></p>
-                        </a>
-                        <ul class="list_container">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="projects_block">
                     <div class="projects_image_container">
                         <a href="">
@@ -174,7 +153,15 @@
         </section>
     </main>
     <footer>
-        <p>Placeholder</p>
+        <p>Built with hand-typed HTML/CSS in <a href="https://code.visualstudio.com/" target="_blank"><span>VSCode</span></a> 
+            by myself. All text is the <a href="https://fonts.google.com/specimen/Inter" target="_blank"><span>Inter</span></a> typeface.<br>
+            Inspired by a website made by <a href="https://brittanychiang.com/" target="_blank"><span>Brittany Chiang</span></a>.
+        </p>
+        <nav>
+            <a class="highlight" href="#top">
+                <p>&uarr;</p>
+            </a>
+        </nav>
     </footer>
 </body>
 </html>
