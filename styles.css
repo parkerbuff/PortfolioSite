@@ -11,7 +11,11 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     position: relative;
-    z-index: 10;
+    z-index: 1;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -48,6 +52,7 @@ li::selection {
 a p,
 a i,
 a h3,
+a span,
 .projects_image_container {
     transition-duration: 400ms;
 }
@@ -55,6 +60,7 @@ a h3,
 a p:hover,
 a i:hover,
 a h3:hover,
+a span:hover,
 .project_link:hover {
     color: var(--color-accent);
 }
@@ -114,19 +120,42 @@ main {
 section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 section h2 {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
+}
+
+.freeze_header {
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 2;
+}
+
+.freeze_header h2{
+    position: relative;
+}
+
+.freeze_header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-backdrop);
+    opacity: 0.7;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.about_content {
+    padding: .5rem .5rem;
 }
 
 .about_content p{
@@ -161,6 +190,10 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
     font-size: .9rem;
+    padding: .5rem .5rem;
+    border-radius: 1rem;
+    width: 600px;
+    transition-duration: 200ms;
 }
 
 .experience_block {
@@ -205,4 +238,40 @@ section h2 {
     object-fit: cover;
     width: 100%;
     height: 100%;
+}
+
+footer p{
+    opacity: .6;
+}
+
+footer nav{
+    top: 1rem;
+    transition-duration: 200ms;
+}
+
+footer nav p{
+    padding: 1rem;
+    opacity: 1;
+    background-color: rgba(22, 95, 57, 0.348);
+    color: var(--color-accent);
+    padding: 0.3rem .6rem;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+footer nav p:hover{
+    opacity: .6;
+}
+
+footer span {
+    color: var(--color-highlight);
+}
+
+@media (min-width: 640px) {
+    
+}
+
+@media (min-width: 1024px) {
+    
 }
